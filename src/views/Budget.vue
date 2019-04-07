@@ -208,7 +208,7 @@ export default {
       } else {
         this.$flashStorage.flash(
           `transaction exceeds the limit by ${Math.abs(this.limitOverflow)} ${
-            this.selectedCurrency
+            this.budget.currency
           }`,
           "error",
           {
